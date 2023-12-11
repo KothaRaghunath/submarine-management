@@ -1,5 +1,7 @@
 **Steps to test the submarine-management app**
+
 **Prerequisits** : Java 8 & STS to run the applicaiton.
+
 **Application Execution Process** :
 1. Download the project form the url :https://github.com/KothaRaghunath/submarine-management
 2.Unzip the downloaded project in any folder
