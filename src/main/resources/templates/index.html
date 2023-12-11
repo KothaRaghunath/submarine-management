@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Submarine Management</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head> 
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.bx-size {
+  width: fit-content !important
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+   
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-2">Submarine Control Room </h1>
+          <h5>Hej Mr. Jack Sparrow, below are the submarines which you can control !!!</h5>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="row" id="submarines">
+        </div>
+      </div> <!-- /container -->
+	  <div class="row">
+	  <div class="column">
+	    
+        <div class="container">
+          <h4 class="display-5">Submarine Registration Control Room 1</h4>
+          <h5>Hey There... Register yourself with <strong>Mr. Jack Sparrow's</strong> Control Room</h5>
+        </div>
+  
+      <div class="container">
+
+          <div id="error1" class="alert alert-danger hide">
+            <strong>Submarine is already registered with the given name</strong>. Please try with different name
+          </div>
+
+          <div id="success1" class="alert alert-success hide">
+              <strong>Submarine </strong> is registered successfully !!!
+            </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <label for="name">Submarine Name:</label>
+                <input type="text" class="form-control" id="name1">
+              </div>
+              <input type="hidden" id="subuuid1"></input>
+            </form>            
+          </div>
+          <div class="col-md-4">
+              <a class="btn btn-secondary hide bx-size" href="#" role="button" id="hideSubmarine1">Hide Submarine</a>
+              <a class="btn btn-primary bx-size" href="#" role="button" id="registerSubmarine1">Register Submarine</a>
+          </div>
+        </div>
+      </div> <!-- /container -->
+
+	  </div>
+	  <div class="column">
+	    
+        <div class="container">
+          <h4 class="display-5">Submarine Registration Control Room 2</h4>
+          <h5>Hey There... Register yourself with <strong>Mr. Jack Sparrow's</strong> Control Room</h5>
+        </div>
+  
+      <div class="container">
+
+          <div id="error2" class="alert alert-danger hide">
+            <strong>Submarine is already registered with the given name</strong>. Please try with different name
+          </div>
+
+          <div id="success2" class="alert alert-success hide">
+              <strong>Submarine </strong> is registered successfully !!!
+            </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <label for="name">Submarine Name:</label>
+                <input type="text" class="form-control" id="name2">
+              </div>
+              <input type="hidden" id="subuuid2"></input>
+            </form>            
+          </div>
+          <div class="col-md-4">
+              <a class="btn btn-secondary hide bx-size" href="#" role="button" id="hideSubmarine2">Hide Submarine</a>
+              <a class="btn btn-primary bx-size" href="#" role="button" id="registerSubmarine2">Register Submarine</a>
+          </div>
+        </div>
+      </div> <!-- /container -->
+
+	  </div>
+	  <div class="column">
+	
+	    
+        <div class="container">
+          <h4 class="display-5">Submarine Registration Control Room 3</h4>
+          <h5>Hey There... Register yourself with <strong>Mr. Jack Sparrow's</strong> Control Room</h5>
+        </div>
+  
+      <div class="container">
+
+          <div id="error3" class="alert alert-danger hide">
+            <strong>Submarine is already registered with the given name</strong>. Please try with different name
+          </div>
+
+          <div id="success3" class="alert alert-success hide">
+              <strong>Submarine </strong> is registered successfully !!!
+            </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <label for="name">Submarine Name:</label>
+                <input type="text" class="form-control" id="name3">
+              </div>
+              <input type="hidden" id="subuuid3"></input>
+            </form>            
+          </div>
+          <div class="col-md-4">
+              <a class="btn btn-secondary hide bx-size" href="#" role="button" id="hideSubmarine3">Hide Submarine</a>
+              <a class="btn btn-primary bx-size" href="#" role="button" id="registerSubmarine3">Register Submarine</a>
+          </div>
+        </div>
+		</div>
+      </div> <!-- /container -->
+
+	  
+	  </div>
+<script src="./js/script.js"></script>
+<script src="./js/submarine.js"></script>
+<!-- <script src="./js/views.js"></script>
+<script src="./js/utils.js"></script> -->
+</body>
+
+</html>
